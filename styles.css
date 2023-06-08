@@ -51,9 +51,36 @@ footer {
     padding: 10px;
 }
 
-#score {
-    display: none;
+#score-container {
     margin-top: 20px;
     font-weight: bold;
+    text-align: center;
+}
+
+#feedback-container {
+    margin-top: 20px;
+    display: none;
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-form label {
+    margin-bottom: 5px;
+}
+
+#feedback-input {
+    margin-bottom: 10px;
+}
+
+#submit-feedback {
+    align-self: flex-start;
+}
+
+#feedback-message {
+    margin-top: 10px;
+    display: none;
     text-align: center;
 }

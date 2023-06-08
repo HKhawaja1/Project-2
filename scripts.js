@@ -77,7 +77,7 @@ function loadQuestion() {
     }
 }
 
-// Evaluates selected answer
+// Checks if answer is correct or incorrect
 function evaluateAnswer(event) {
     const selectedAnswer = event.target.textContent;
     const currentQuestion = quizQuestions[currentQuestionIndex];
@@ -95,21 +95,47 @@ function evaluateAnswer(event) {
     if (currentQuestionIndex < quizQuestions.length) {
         loadQuestion();
     } else {
-        // Show final score at end of quiz
-        document.getElementById("question-container").style.display = "none";
+        hideQuestions();
         showScore();
     }
 }
 
-// Displays final score
+// Hides the question and answers
+function hideQuestions() {
+    document.getElementById("question-container").style.display = "none";
+}
+
+// Displays the final score
 function showScore() {
     const totalQuestions = quizQuestions.length;
     const finalScore = document.getElementById("score-container");
     finalScore.innerHTML = `
-
       <p>Congratulations! You got ${score.correct}/${totalQuestions} questions correct!</p>
+      <button id="feedback-btn">Give Feedback</button>
     `;
+    document.getElementById("feedback-btn").addEventListener("click", showFeedbackForm);
 }
 
-// Starts quiz
+// Shows the feedback form
+function showFeedbackForm() {
+    document.getElementById("feedback-container").style.display = "block";
+    document.getElementById("feedback-btn").style.display = "none";
+}
+
+// Handles the feedback form submission
+document.getElementById("feedback-form").addEventListener("submit", handleFeedbackSubmission);
+
+// Handles the feedback form submission
+function handleFeedbackSubmission(event) {
+    event.preventDefault();
+    const feedbackMessage = document.getElementById("feedback-message");
+    const feedbackForm = document.getElementById("feedback-form");
+
+    feedbackMessage.textContent = "Your feedback has been recorded.";
+    feedbackMessage.style.display = "block";
+    feedbackForm.reset();
+    feedbackForm.style.display = "none";
+}
+
+// Starts the quiz
 loadQuestion();
