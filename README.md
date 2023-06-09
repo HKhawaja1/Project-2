@@ -12,7 +12,7 @@ For this project I have created a golf quiz using HTML, CSS and JavaScript. Ther
 ![Header](https://i.postimg.cc/MGv3SdVG/Header.png)
 
 - Under the header is a different golf image for each question.
-![Image](https://i.postimg.cc/MGv3SdVG/Header.png)
+![Image](https://i.postimg.cc/2yVKxY7r/Image.png)
 
 - Under the image is the question and there will be a total of 10 of these.
 ![Question](https://i.postimg.cc/0ymrBqH5/Question.png)
