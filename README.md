@@ -1,39 +1,51 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Golf Quiz
 
-Welcome,
+For this project I have created a golf quiz using HTML, CSS and JavaScript. There will be a total of 10 questions and you have to try and get as many correct as possible. This website is for you trivia enthusiasts, especially if you are into sports!
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![UI](https://i.postimg.cc/kgVgtddF/UI.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
 
-## Codeanywhere Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Features
 
-`python3 -m http.server`
+- The website contains a header at the top of the page letting the user know they are about to take a golf quiz.
+![Header](https://i.postimg.cc/MGv3SdVG/Header.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- Under the header is a different golf image for each question.
+![Image](https://i.postimg.cc/MGv3SdVG/Header.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- Under the image is the question and there will be a total of 10 of these.
+![Question](https://i.postimg.cc/0ymrBqH5/Question.png)
 
-`http_server`
+- Under the question are four answers and you have to choose the correct one.
+![Answers](https://i.postimg.cc/x8J9NKwj/Answers.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- Under the answers is the score tracker. It tells you how many questions you got right and wrong in total as you proceed to play the quiz.
+![Score](https://i.postimg.cc/X7KYfgZX/Score.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Testing
 
-To log into the Heroku toolbelt CLI:
+- The HTML code passed the validator.
+![HTML](https://i.postimg.cc/YqCsRr0g/HTML.png)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- The CSS code passed the validator.
+![CSS](https://i.postimg.cc/VspGc3F0/CSS.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- The JavaScript code passed the validator.
+![JavaScript](https://i.postimg.cc/Hk29jKb2/Java-Script.png)
 
----
+There were no bugs found in the code. I had problems when creating the form as the 'Your feedback has been recorded.' message wouldn't display but I managed to fix that error.
 
-Happy coding!
+
+## Deployment
+
+I published my project on GitHub pages. I followed [this tutorial](https://docs.github.com/en/pages/quickstart) to help me do it.
+
+## Credits
+
+All of the resources I used have been referenced in my code. 
+
+- The questions were taken [from here](https://www.radiotimes.com/quizzes/pub-quiz-golf/) and I came up with the answers myself.
+- The images are royalty-free and were taken from Pixabay.
+
