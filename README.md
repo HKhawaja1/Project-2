@@ -43,6 +43,10 @@ For this project I have created a golf quiz using HTML, CSS and JavaScript. Ther
 
 ![JavaScript](https://i.postimg.cc/Hk29jKb2/Java-Script.png)
 
+These are my Lighthouse results:
+
+![Lighthouse]((https://i.postimg.cc/gcZ5rzjH/Lighthouse.png)
+
 There were no bugs found in the code. I had problems when creating the form as the 'Your feedback has been recorded.' message wouldn't display but I managed to fix that error.
 
 
