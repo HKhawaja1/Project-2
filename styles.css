@@ -1,3 +1,4 @@
+/*https://www.w3schools.com/cssref/css3_pr_justify-content.php*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,6 +21,10 @@ h1 {
     margin: 0;
 }
 
+/*
+  https://www.w3schools.com/cssref/css3_pr_align-items.php
+  https://www.w3schools.com/css/css_boxmodel.asp
+  */
 main {
     flex: 1;
     max-width: 800px;
@@ -59,6 +64,7 @@ h2 {
     font-weight: bold;
 }
 
+/*https://www.w3schools.com/cssref/sel_nth-of-type.php*/
 .answer-btn:nth-of-type(odd) {
     background-color: #ff99ff;
 }
@@ -98,6 +104,7 @@ footer {
     margin-bottom: 10px;
 }
 
+/*https://www.w3schools.com/cssref/css3_pr_align-self.php*/
 #submit-feedback {
     align-self: flex-start;
 }
@@ -108,7 +115,9 @@ footer {
     text-align: center;
 }
 
-/* Media Queries */
+/* Media Queries 
+  https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+  */
 
 /* Small screens */
 @media (max-width: 576px) {
